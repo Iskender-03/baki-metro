@@ -1,0 +1,64 @@
+{
+  "stations": [
+    {"id": 1, "name": "Bakmil"},
+    {"id": 2, "name": "Nariman Narimanov"},
+    {"id": 3, "name": "Azi Aslanov"},
+    {"id": 4, "name": "Ahmedli"},
+    {"id": 5, "name": "Khalglar Dostlugu"},
+    {"id": 6, "name": "Neftchilyar"},
+    {"id": 7, "name": "Gara Garayev"},
+    {"id": 8, "name": "Keroglu"},
+    {"id": 9, "name": "Ulduz"},
+    {"id": 10, "name": "Ganjlik"},
+    {"id": 11, "name": "28 May"},
+    {"id": 12, "name": "Nizami"},
+    {"id": 13, "name": "Elyemlyar Akademiyasy"},
+    {"id": 14, "name": "Inshaatchilar"},
+    {"id": 15, "name": "20 Yanvar"},
+    {"id": 16, "name": "Memar Ajami"},
+    {"id": 17, "name": "Nasimi"},
+    {"id": 18, "name": "Azadlyg Prospekt"},
+    {"id": 19, "name": "Dyarnyagyul"},
+    {"id": 20, "name": "Sahil"},
+    {"id": 21, "name": "Icheri Sheher"},
+    {"id": 22, "name": "Hojasan Depo"},
+    {"id": 23, "name": "Hojasan"},
+    {"id": 24, "name": "Avtovagzal"},
+    {"id": 25, "name": "Memar Ajami 2"},
+    {"id": 26, "name": "8 November"},
+    {"id": 27, "name": "Jafar Jabbarly"},
+    {"id": 28, "name": "Khatai"}
+  ],
+  "lines": [
+    {
+      "name": "Main",
+      "isOneWay": false,
+      "isPurple": false,
+      "initial": [1, 2],
+      "green": [3, 4, 5, 6, 7, 8, 9, 2, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+      "red": [3, 4, 5, 6, 7, 8, 9, 2, 10, 11, 20, 21],
+      "bakmil_from_green": [19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 2, 1],
+      "bakmil_from_red": [21, 20, 11, 10, 2, 1]
+    },
+    {
+      "name": "Purple",
+      "isOneWay": false,
+      "isPurple": true,
+      "initial": [22, 23, 24, 25, 26],
+      "green": [23, 24, 25, 26],
+      "red": [],
+      "bakmil_from_green": [],
+      "bakmil_from_red": [24, 23, 22]
+    },
+    {
+      "name": "Lime",
+      "isOneWay": true,
+      "isPurple": false,
+      "initial": [27],
+      "green": [27, 28],
+      "red": [],
+      "bakmil_from_green": [],
+      "bakmil_from_red": []
+    }
+  ]
+}
